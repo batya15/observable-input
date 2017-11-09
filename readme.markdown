@@ -23,7 +23,6 @@ class SomeComponent {
   @Input() @ObservableInput()
   private index: Observable<number>
 
-  @select()
   private selectedIndex: Observable<number>
 
   public isSelected = this.index.switchMap(
